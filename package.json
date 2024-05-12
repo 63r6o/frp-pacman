@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "server": "parcel index.html --no-cache",
+    "server": "parcel src/index.html --no-cache",
+    "build": "rm -rf dist/* && parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
