@@ -26,7 +26,6 @@ import {
   of,
   once,
   switcher,
-  takeUntil,
   first,
   timer,
 } from "./rxjssubset";
@@ -183,9 +182,6 @@ const createGameOverState = (score) => {
   );
 };
 
-const gameloop = switcher(
-  gameState.pipe(takeUntil(gameOver)),
-  gameOver.pipe(map((x) => createGameOverState(x))),
-);
+const gameloop = switcher(gameState, gameOver.pipe(map(createGameOverState)));
 
 gameloop.subscribe(draw);

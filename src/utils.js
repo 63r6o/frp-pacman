@@ -130,7 +130,7 @@ export const initDots = (numberOfDots, dotWidth, magicIndex) =>
   Array(numberOfDots)
     .fill(0)
     .map((_, i) => ({
-      x: i * dotWidth * 3 + dotWidth * 1.5, // canvasWidth / numberOfDots + dotWidth * 1.5
+      x: i * dotWidth * 3 + dotWidth * 1.5,
       magic: i === magicIndex,
       eaten: false,
     }));
