@@ -20,6 +20,7 @@ The shape of the game's state:
     text: string
   }
 ```
+The game is hosted at [https://63r6o.github.io/frp-pacman/](https://63r6o.github.io/frp-pacman/).
 
 ## Installation
 If you'd like to run it locally, clone the repository, `npm install` the dependencies then run the dev server with `npm run server`.
